@@ -50,7 +50,7 @@ warning = '<p style="font-family:sans-serif; color:Red; font-size: 32px;">Extrap
 
 if IS == 0.0 and LN == 0.0:
     aadt = st.slider('Directional AADT', value=10000, min_value=2000, max_value=40000)
-    truck = st.slider('Truck Percentage', value=12.5, min_value=1, max_value=85)
+    truck = st.slider('Truck Percentage', value=12.5, min_value=1.0, max_value=85.0)
     if (Urban == 1.0 and aadt>25000) or (Urban == 0.0 and aadt>15000):
         st.markdown(warning, unsafe_allow_html=True)
 elif IS == 0.0 and LN == 1.0:
@@ -60,12 +60,12 @@ elif IS == 0.0 and LN == 1.0:
         st.markdown(warning, unsafe_allow_html=True)
 elif IS == 1.0 and LN == 0.0:
     aadt = st.slider('Directional AADT', value=10000, min_value=2000, max_value=60000)
-    truck = st.slider('Truck Percentage', value=12.5, min_value=1, max_value=85)
+    truck = st.slider('Truck Percentage', value=12.5, min_value=1.0, max_value=85.0)
     if (Urban == 0.0 and aadt >30000):
         st.markdown(warning, unsafe_allow_html=True)
 else:
     aadt = st.slider('Directional AADT', value=10000, min_value=2000, max_value=100000)
-    truck = st.slider('Truck Percentage', value=12.5, min_value=1, max_value=85)
+    truck = st.slider('Truck Percentage', value=12.5, min_value=1.0, max_value=85.0)
     if (Urban == 0.0 and aadt >50000):
         st.markdown(warning, unsafe_allow_html=True)
 
