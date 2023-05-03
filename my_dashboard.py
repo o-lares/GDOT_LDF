@@ -111,12 +111,12 @@ fig = plt.figure(figsize = (10, 5))
 plt.bar(lanes, values, color ='blue', width = 0.5)
 
 #plt.xlabel("Lanes")
-plt.ylabel("percent of trucks")
+plt.ylabel("Percent of Trucks")
 
 if LN == 0.0:
-    plt.title(f"Lane Distribution Factor: inner lane={data_dict['inner_lane']:.2f}, outer lane={data_dict['outer_lane']:.2f}")
+    plt.title(f"Lane Distribution Factor: Inner Lane={data_dict['inner_lane']:.2f}, Outer Lane={data_dict['outer_lane']:.2f}")
 else:
-    plt.title(f"Lane Distribution Factor: inner lane={data_dict['inner_lane']:.2f}, center lane={data_dict['center_lane']:.2f}, outer lane={data_dict['outer_lane']:.2f}")
+    plt.title(f"Lane Distribution Factor: Inner Lane={data_dict['inner_lane']:.2f}, Center Lane={data_dict['center_lane']:.2f}, Outer Lane={data_dict['outer_lane']:.2f}")
 plt.show()
 
 st.pyplot(fig)
