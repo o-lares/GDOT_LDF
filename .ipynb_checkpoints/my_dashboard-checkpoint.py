@@ -74,7 +74,7 @@ else:
 df = pd.read_csv('std_params.csv')
 
 b0 = df["const"][0]
-b1 = df["Truck_pecentage"][0]
+b1 = df["Truck_percentage"][0]
 b2 = df["AADT"][0]
 b3 = df["Urban"][0]
 b4 = df["Atlanta+Macon"][0]
