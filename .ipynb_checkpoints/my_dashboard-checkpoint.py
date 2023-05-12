@@ -14,7 +14,7 @@ st.title('Region Specific Lane Distribution Factor')
 region = st.selectbox('Select region', ['Atlanta/Macon','Savannah','Other - State'])
 if region == 'Atlanta/Macon' or  region == 'Savannah':
     area = 'Urban'
-    st.write('Area type: Urban (fixed for selected region)') 
+    st.write('Area type: Urban') 
 else:
     area = st.selectbox('Select area type', ["Urban", "Rural"])
     
