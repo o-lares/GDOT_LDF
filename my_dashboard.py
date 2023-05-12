@@ -46,28 +46,28 @@ else:
     Atl = 0.0
     Sav = 0.0
     
-warning = '<p style="font-family:sans-serif; color:Red; font-size: 32px;">Extrapolated LDF values, use with caution.</p>'
+#warning = '<p style="font-family:sans-serif; color:Red; font-size: 32px;">Extrapolated LDF values, use with caution.</p>'
 
 if IS == 0.0 and LN == 0.0:
     aadt = st.slider('Directional AADT', value=10000, min_value=2000, max_value=40000)
     truck = st.slider('Truck Percentage', value=12, min_value=1, max_value=85)
-    if (Urban == 1.0 and aadt>25000) or (Urban == 0.0 and aadt>15000):
-        st.markdown(warning, unsafe_allow_html=True)
+    # if (Urban == 1.0 and aadt>25000) or (Urban == 0.0 and aadt>15000):
+    #     st.markdown(warning, unsafe_allow_html=True)
 elif IS == 0.0 and LN == 1.0:
     aadt = st.slider('Directional AADT', value=10000, min_value=2000, max_value=35000)
     truck = st.slider('Truck Percentage', value=12, min_value=1, max_value=85)
-    if Urban == 0.0:
-        st.markdown(warning, unsafe_allow_html=True)
+    # if Urban == 0.0:
+    #     st.markdown(warning, unsafe_allow_html=True)
 elif IS == 1.0 and LN == 0.0:
     aadt = st.slider('Directional AADT', value=10000, min_value=2000, max_value=60000)
     truck = st.slider('Truck Percentage', value=12, min_value=1, max_value=85)
-    if (Urban == 0.0 and aadt >30000):
-        st.markdown(warning, unsafe_allow_html=True)
+    # if (Urban == 0.0 and aadt >30000):
+    #     st.markdown(warning, unsafe_allow_html=True)
 else:
     aadt = st.slider('Directional AADT', value=10000, min_value=2000, max_value=100000)
     truck = st.slider('Truck Percentage', value=12, min_value=1, max_value=85)
-    if (Urban == 0.0 and aadt >50000):
-        st.markdown(warning, unsafe_allow_html=True)
+    # if (Urban == 0.0 and aadt >50000):
+    #     st.markdown(warning, unsafe_allow_html=True)
 
 
 #preprocess the input
