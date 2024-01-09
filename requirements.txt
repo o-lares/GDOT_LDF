@@ -2,6 +2,6 @@ numpy
 scipy
 matplotlib
 torch
-sklearn
+scikit-learn
 streamlit
 pandas
